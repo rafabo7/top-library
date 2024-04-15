@@ -1,0 +1,19 @@
+
+
+:root {
+    --no-white: #FEFDED;
+    --second: #A1C398;
+    --third: #A1C398;
+    --contrast: #FA7070;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sedan', 'Times New Roman', Times, serif;
+}
