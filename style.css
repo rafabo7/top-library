@@ -3,9 +3,13 @@
 :root {
     --no-white: #FEFDED;
     --second: #A1C398;
-    --third: #A1C398;
+    --third: #d3fed3;
     --contrast: #FA7070;
 
+}
+
+html {
+    font-size: 18px;
 }
 
 * {
@@ -15,5 +19,59 @@
 }
 
 body {
-    font-family: 'Sedan', 'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+
+    background-color: var(--no-white);
+    box-shadow: 2px 0px 6px;
+}
+
+main {
+    margin: 12px 0;
+    text-align: center;
+}
+
+.books-grid {
+
+    margin: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+    gap: 60px
+}
+
+.card {
+    background-color: var(--no-white);
+    box-shadow: 0px 2px 4px black;
+    padding: 20px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 18px;
+}
+
+.primary-button {
+    font-size: 1.2rem;
+    padding: 12px;
+    width: 140px;
+    border: none;
+    background-color: var(--second);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
