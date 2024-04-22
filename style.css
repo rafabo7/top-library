@@ -39,6 +39,30 @@ main {
     text-align: center;
 }
 
+dialog[open] {
+    top: 21%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: var(--no-white);
+    box-shadow: 0px 2px 4px black;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+}
+
+dialog::backdrop {
+    background-color: grey;
+    opacity: 40%;
+}
+
 .books-grid {
 
     margin: 12px;
