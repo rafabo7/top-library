@@ -18,7 +18,23 @@
     <main>
         <button class="primary-button new">+ Add book</button>
         <dialog>
-            <p>What the</p>
+            <form action="" method="dialog">
+                <label for="author">
+                    Author
+                    <input type="text" name="author" id="author">
+                </label>
+                <label for="title">
+                    Title
+                    <input type="text" name="title" id="title">
+                </label>
+                <label for="pages">
+                    Pages 
+                    <input type="text" name="pages" id="pages">
+                </label>
+                <input class="primary-button" type="submit" value="+ Add">
+                <button class="red-button" id="cancel-button">Cancel</button>
+            </form>
+
         </dialog>
 
         <section class="books-grid">
