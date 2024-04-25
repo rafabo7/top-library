@@ -6,6 +6,8 @@
     --third: #d3fed3;
     --contrast: #FA7070;
 
+    --footer-height: 26px;
+
 }
 
 html {
@@ -20,7 +22,7 @@ html {
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    height: calc(100vh - var(--footer-height));
 
 }
 
@@ -30,13 +32,13 @@ header {
     justify-content: space-between;
     padding: 20px;
 
-    background-color: var(--no-white);
     box-shadow: 2px 0px 6px;
 }
 
 main {
     margin: 12px 0;
     text-align: center;
+    height: 84%;
 }
 
 dialog[open] {
@@ -44,14 +46,13 @@ dialog[open] {
     margin-left: auto;
     margin-right: auto;
     height: 540px;
-    width: 400px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
 
-    background-color: var(--no-white);
     box-shadow: 0px 2px 4px black;
     padding: 20px;
     border-radius: 12px;
@@ -95,11 +96,10 @@ form label input[type="text"] {
     margin: 12px;
     display: grid;
     grid-template-columns: repeat(3, minmax(400px, 1fr));
-    gap: 60px
+    gap: 90px
 }
 
 .card {
-    background-color: var(--no-white);
     box-shadow: 0px 2px 4px black;
     padding: 20px;
     border-radius: 12px;
